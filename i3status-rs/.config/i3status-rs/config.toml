@@ -1,0 +1,40 @@
+icons = "awesome"
+
+[theme]
+name = "plain"
+
+[theme.overrides]
+separator = ""
+idle_fg = "#ffffff"
+info_fg = "#ffffff"
+good_fg = "#ffffff"
+warning_fg = "#ffffff"
+critical_fg = "#ee4bb5"
+separator_fg = "#ffffff"
+
+[[block]]
+block = "net"
+device = "wlp3s0"
+ssid = true
+ip = true
+interval = 1
+speed_up = false
+speed_down = false
+
+[[block]]
+block = "battery"
+interval = 10
+format = "{percentage}% {time}"
+
+[[block]]
+block = "load"
+interval = 1
+format = "{1m}"
+
+[[block]]
+block = "sound"
+
+[[block]]
+block = "time"
+interval = 60
+format = "%a %d/%m %R"
